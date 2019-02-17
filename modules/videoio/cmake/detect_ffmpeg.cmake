@@ -25,7 +25,7 @@ if(NOT HAVE_FFMPEG AND WIN32 AND NOT ARM AND NOT OPENCV_FFMPEG_SKIP_DOWNLOAD)
 endif()
 
 if(NOT HAVE_FFMPEG AND PKG_CONFIG_FOUND)
-  pkg_check_modules(FFMPEG libavcodec libavformat libavutil libswscale QUIET)
+  pkg_check_modules(FFMPEG libavcodec libavformat libavutil libswscale libswresample QUIET)
   pkg_check_modules(FFMPEG_libavresample libavresample QUIET) # optional
   if(FFMPEG_FOUND)
     if(FFMPEG_libavresample_FOUND)
