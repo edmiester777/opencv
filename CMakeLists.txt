@@ -1416,6 +1416,7 @@ if(WITH_FFMPEG OR HAVE_FFMPEG)
   status("      avutil:"       FFMPEG_libavutil_FOUND     THEN "YES (ver ${FFMPEG_libavutil_VERSION})"     ELSE NO)
   status("      swscale:"      FFMPEG_libswscale_FOUND    THEN "YES (ver ${FFMPEG_libswscale_VERSION})"    ELSE NO)
   status("      avresample:"   FFMPEG_libavresample_FOUND THEN "YES (ver ${FFMPEG_libavresample_VERSION})" ELSE NO)
+  status("      swresample:"   FFMPEG_libswresample_FOUND THEN "YES (ver ${FFMPEG_libswresample_VERSION})" ELSE NO)
 endif()
 
 if(WITH_GSTREAMER OR HAVE_GSTREAMER)

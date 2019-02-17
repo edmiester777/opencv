@@ -232,7 +232,7 @@ if(WITH_FFMPEG)  # try FFmpeg autodetection
       include("${FFMPEG_CMAKE_SCRIPT}")
     endif()
   elseif(PKG_CONFIG_FOUND)
-    ocv_check_modules(FFMPEG libavcodec libavformat libavutil libswscale)
+    ocv_check_modules(FFMPEG libavcodec libavformat libavutil libswscale libswresample)
     ocv_check_modules(FFMPEG_libavresample libavresample)
     if(FFMPEG_libavresample_FOUND)
       ocv_append_build_options(FFMPEG FFMPEG_libavresample)
